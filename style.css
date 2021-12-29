@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Oswald&family=Overpass&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Oswald&family=Overpass&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
+/*END OF THE IMPORTED FONTS*/
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  background-color: rgb(241, 241, 241);
+  color: rgb(110, 110, 110);
+  display: flex;
+  margin: none;
+  padding: none;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+nav img {
+  font-size: auto;
+  margin: 10px;
+}
+nav h1 {
+  cursor: default;
+  margin-top: 20px;
+  margin-left: 0px;
+  color: rgb(151, 151, 151);
+  text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  font-family: "Quicksand";
+  font-size: 50px;
+  font-weight: 300;
+}
+nav ul {
+  justify-content: flex-end;
+  float: inline-end;
+  margin-right: 10px;
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  display: flex;
+  padding: 14px;
+  font-size: 30px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  justify-content: flex-end;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(110, 110, 110);
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(143, 8, 8);
+}
