@@ -2,15 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Oswald&family=Overpass&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Moon+Dance&family=Oswald&family=Overpass&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Moon+Dance&family=Oswald&family=Overpass&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Moon+Dance&family=Oswald&family=Overpass&family=Pushster&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
 /*END OF THE IMPORTED FONTS*/
 body {
-  background-color: rgb(228, 239, 248);
+  opacity: 1;
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
+body .backgroundPattern {
+  background-color: #e5e5f7;
+  width: 100%;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 23px
+    ),
+    repeating-linear-gradient(#f4f4ff55, #f4f4ff);
 }
 nav {
   position: fixed;
@@ -82,7 +94,7 @@ header h1 {
   font-weight: 400;
   font-family: "Anton";
   animation: colorshade;
-  animation: colorshade 2.5s ease 1s infinite alternate;
+  animation: colorshade 1.5s ease 1s infinite alternate;
 }
 header .title {
   display: flex;
@@ -103,35 +115,51 @@ header .text {
 .firstButton {
   margin: auto;
   font-size: 40px;
+  font-family: "Pushster";
+  font-weight: 400;
   display: flex;
-  padding: 15px;
+  padding: 15px 35px;
   justify-content: center;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.37);
-  color: rgb(228, 228, 228);
-  border: 3px solid rgb(240, 240, 240);
-  border-radius: 30px;
+  background-color: rgb(253, 253, 253);
+  color: rgb(54, 54, 54);
+  border: 2px solid rgb(236, 236, 236);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transition: 0.5s ease all;
+  /* animation: invisible 1s ease 0s infinite alternate;*/
 }
 .firstButton:hover {
-  background-color: rgba(37, 37, 37, 0.144);
-  color: rgb(243, 243, 243);
-  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(53, 53, 53);
+  color: rgb(235, 235, 235);
+  padding: 20px 40px;
+  font-size: 3vw;
+  border: 3px solid rgb(116, 116, 116);
+  animation: increase 0.5s ease-in-out 0s;
 }
 /*ANIMATIONS*/
 @keyframes colorshade {
-  20% {
-    color: cadetblue;
-  }
-  40% {
-    color: rgb(241, 173, 47);
-  }
-  60% {
-    color: rgb(65, 65, 65);
-  }
-  80% {
-    color: green;
+  50% {
+    color: rgb(83, 83, 83);
   }
   100% {
-    color: red;
+    color: rgb(90, 90, 90);
+  }
+}
+@keyframes invisible {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes increase {
+  from {
+    padding: 15px 35px;
+    font-size: 40px;
+  }
+  to {
+    padding: 20px 40px;
+    font-size: 3vw;
   }
 }
