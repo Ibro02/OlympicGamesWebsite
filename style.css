@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Oswald&family=Overpass&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Moon+Dance&family=Oswald&family=Overpass&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Moon+Dance&family=Oswald&family=Overpass&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Moon+Dance&family=Oswald&family=Overpass&family=Pushster&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Kanit:wght@500;600&family=M+PLUS+2&family=Mochiy+Pop+P+One&family=Moon+Dance&family=Oswald&family=Overpass&family=Pushster&family=Quicksand:wght@300;400&family=Roboto&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
 /*END OF THE IMPORTED FONTS*/
 body {
@@ -88,13 +89,17 @@ header {
   clip-path: polygon(0 0, 100% 0, 88% 100%, 11% 100%);
 }
 header h1 {
-  margin-top: 150px;
+  display: flex;
+  margin-top: 20vw;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 40px;
+  font-size: 70px;
   font-weight: 400;
-  font-family: "Anton";
-  animation: colorshade;
-  animation: colorshade 1.5s ease 1s infinite alternate;
+  color: rgb(27, 27, 27);
+  font-family: "Archivo Narrow";
+  text-shadow: 10px 10px 10px rgb(255, 255, 255);
+  /*animation: colorshade 1.5s ease 1s infinite alternate;*/
 }
 header .title {
   display: flex;
@@ -134,15 +139,16 @@ header .text {
   padding: 20px 40px;
   font-size: 3vw;
   border: 3px solid rgb(116, 116, 116);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   animation: increase 0.5s ease-in-out 0s;
 }
 /*ANIMATIONS*/
 @keyframes colorshade {
   50% {
-    color: rgb(83, 83, 83);
+    color: rgb(247, 247, 247);
   }
   100% {
-    color: rgb(90, 90, 90);
+    color: rgb(224, 224, 224);
   }
 }
 @keyframes invisible {
@@ -157,9 +163,11 @@ header .text {
   from {
     padding: 15px 35px;
     font-size: 40px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   }
   to {
     padding: 20px 40px;
     font-size: 3vw;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   }
 }
