@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>New 2026 Olympic games, Bosnia and Herzegovina</title>
   </head>
   <body>
@@ -21,11 +22,47 @@
     </nav>
     <!--BEGGINING OF THE FIRST PART OF THE PAGE-->
     <header>
+      
       <div class="text"> 
 <h1>Welcome to Olympic games of Bosnia and Herzegovina</h1>
 </div>
 <button type="button" class="firstButton">Click here</button>
 </header>
 </div>
-  </body>
+<div class="main">
+  <div class="countdown">
+    <div class="upcommingGames">
+    <img src="./src/olympicgameslogo.png" class="circle"/>
+    <h1 class="secondTitle">Upcomming games</h1>
+    </div>
+    <div class="numbs">
+
+      <div class="element">
+        <h1 class="elementTitle">YEARS</h1>
+        <h2 id="years"></h2>
+      </div>
+
+      <div class="element">
+        <h1 class="elementTitle">MONTHS</h1>
+        <h2 id="months"></h2>
+      </div>
+
+      <div class="element">
+        <h1 class="elementTitle">DAYS</h1>
+        <h2 id="days"></h2>
+      </div>
+<div class="difColor">
+      <div class="element">
+        <h1 class="elementTitle">HOURS</h1>
+        <h2 id="hours"></h2>
+      </div>
+      </div>
+     
+    </div>
+  </div>
+
+</div>
+<script src="./app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
 </html>
