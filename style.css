@@ -93,7 +93,8 @@ header {
 }
 header h1 {
   display: flex;
-  margin-top: 20vw;
+  margin-top: 15vw;
+  clip-path: polygon(5% 0, 90% 0, 95% 100%, 10% 100%);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -101,7 +102,7 @@ header h1 {
   font-weight: 400;
   color: rgb(27, 27, 27);
   font-family: "Archivo Narrow";
-  text-shadow: 10px 10px 10px rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   /*animation: colorshade 1.5s ease 1s infinite alternate;*/
 }
 header .title {
